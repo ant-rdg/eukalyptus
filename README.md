@@ -54,7 +54,7 @@ Windows, sans Electron).
 | Mosh | Oui | Pas encore |
 | Navigateur SFTP à côté du terminal, glisser-déposer, éditeur de code intégré | Oui | Oui |
 | FTP, FTPS, S3 et compatibles (AWS, MinIO, Cloudflare R2…) | Oui | Oui |
-| Plusieurs transferts en même temps, avec progression, débit et temps restant | Version en cours | Oui (0.9.5) |
+| Plusieurs transferts en même temps, avec progression, débit et temps restant | Oui (0.9.5) | Oui (0.9.5) |
 | Bureau à distance RDP intégré dans un onglet, passerelle SSH | Oui | Oui |
 | VNC intégré dans un onglet | Oui | Oui |
 | Navigateur intégré | Oui | Oui |
