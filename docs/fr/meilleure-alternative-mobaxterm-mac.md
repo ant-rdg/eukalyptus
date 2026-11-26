@@ -3,6 +3,7 @@ title: "La meilleure alternative à MobaXterm sur Mac"
 description: "MobaXterm n'existe pas sur Mac. Eukalyptus importe vos sessions et réunit SSH, SFTP, tunnels et macros dans une app macOS native, gratuite et sans limite. Le guide complet."
 category: Guide
 date: 2026-10-28
+updated: 2026-11-26
 reading_time: 10 min
 source: https://eukalyptus.app/blog/meilleure-alternative-mobaxterm-mac
 ---
@@ -165,7 +166,7 @@ Oui. Eukalyptus lit le fichier MobaXterm.ini ou l'export de vos sessions (.mxtse
 <details>
 <summary>Sur quels Mac fonctionne Eukalyptus ?</summary>
 
-Sur les Mac Apple silicon (puces de la série M) avec macOS 14 ou plus récent. Une version pour Windows est prévue.
+Sur les Mac Apple silicon (puces de la série M) avec macOS 14 ou plus récent. Eukalyptus existe aussi pour Windows 10 et 11 (installateur .exe), avec les mêmes fonctions pour l'essentiel ; seul Mosh n'y est pas encore disponible.
 
 </details>
 

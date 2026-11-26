@@ -1,9 +1,9 @@
 ---
 title: "Sync your SSH sessions between Mac and Windows, end-to-end encrypted"
-description: "Session sync is available since version 0.9.0 on Mac, with Eukalyptus+: end-to-end encrypted on your devices, through a temporary relay on the Eukalyptus server that cannot read anything. With Windows once its version is out. The principle and how to check it."
+description: "Session sync is available since version 0.9.0, on Mac and on Windows, with Eukalyptus+: end-to-end encrypted on your devices, through a temporary relay on the Eukalyptus server that cannot read anything. The principle and how to check it."
 category: Guide
 date: 2026-11-01
-updated: 2026-11-03
+updated: 2026-11-26
 reading_time: 7 min read
 source: https://eukalyptus.app/en/blog/sync-ssh-sessions
 ---
@@ -14,7 +14,7 @@ If you manage servers from a Mac and a Windows PC, you end up copying your sessi
 
 > **In short**
 >
-> - It is available since version 0.9.0, between your Macs, and it is reserved for Eukalyptus+, like the team vault. With Windows, it will work once the Windows version is out.
+> - It is available since version 0.9.0, between your Macs and your Windows PCs, and it is reserved for Eukalyptus+, like the team vault.
 > - No account. The files go through the Eukalyptus server, a simple temporary relay, and are deleted from it at the latest 365 days after their last modification. No iCloud, no Dropbox, no OneDrive, no SFTP.
 > - Everything is end-to-end encrypted on your devices, with a key only your devices have: the server cannot read the files.
 > - An administrator or an attacker of the server can hold back or delete files, never read them or modify them without detection. If you lose the key and all your devices, nobody can recover the data.
@@ -35,7 +35,7 @@ If you manage servers from a Mac and a Windows PC, you end up copying your sessi
 
 ## What version 0.9.0 brings
 
-A clarification first, so there is no doubt: **session sync is available since version 0.9.0 for Mac**, and it is reserved for Eukalyptus+. Between a Mac and a Windows PC, it will work with the Windows version, which is not out yet. This article describes the chosen principle, so that you can judge it before trusting it with anything.
+A clarification first, so there is no doubt: **session sync is available since version 0.9.0, on Mac and on Windows**, and it is reserved for Eukalyptus+. Between a Mac and a Windows PC, it works the same way as between two Macs. This article describes the chosen principle, so that you can judge it before trusting it with anything.
 
 ## The problem: two machines, one set of sessions
 
@@ -47,7 +47,7 @@ Eukalyptus takes another road: the files are encrypted on your devices before th
 
 Your devices exchange files through the Eukalyptus server. For each group of devices, it keeps the latest encrypted file of each device, and the other devices come and fetch it. The mailbox and its access right are computed from the sync key, which only your devices have: there is no account to create.
 
-*Diagram: Sync: a Mac encrypts its sessions and sends them to the Eukalyptus server, a simple temporary relay where they stay unreadable; your other device (another Mac, then a Windows PC with the Windows version) fetches them and decrypts them with the same key.*
+*Diagram: Sync: a Mac encrypts its sessions and sends them to the Eukalyptus server, a simple temporary relay where they stay unreadable; your other device (another Mac or a Windows PC) fetches them and decrypts them with the same key.*
 
 | Your Mac |  | Eukalyptus server |  | Your other device |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ The team vault also goes through the Eukalyptus server, with the same guarantees
 
 ## Without sync: export and import
 
-Without Eukalyptus+, or to move to a Windows PC until its version is out, you can move between machines by hand: export your sessions to an **.eukalyptus** file, then import it on the other device. That export contains no password. Your SSH keys stay in your agent or your **.ssh** folder, as with any client: see the [SSH keys guide](./ssh-keys-mac.md).
+Without Eukalyptus+, you can move between machines by hand: export your sessions to an **.eukalyptus** file, then import it on the other device. That export contains no password. Your SSH keys stay in your agent or your **.ssh** folder, as with any client: see the [SSH keys guide](./ssh-keys-mac.md).
 
 ## What is decided, what is still open
 
@@ -111,14 +111,14 @@ What is settled:
 - passwords are synced by default, and you choose what is synced, category by category;
 - a published format you can check.
 
-**Our servers only pass things along.** Everything that goes through them is end-to-end encrypted on your devices before it leaves: the server only sees unreadable data, without the key to open it. Nothing is kept there more than 365 days after its last change, and your data stays on your devices. Still open: sync with Windows, which waits for the Windows version to be out. The principle is also summarized on the [Security](https://eukalyptus.app/en/security#sync) page.
+**Our servers only pass things along.** Everything that goes through them is end-to-end encrypted on your devices before it leaves: the server only sees unreadable data, without the key to open it. Nothing is kept there more than 365 days after its last change, and your data stays on your devices. The principle is also summarized on the [Security](https://eukalyptus.app/en/security#sync) page.
 
 ## Frequently asked questions
 
 <details>
 <summary>Is sync available?</summary>
 
-Yes, since version 0.9.0 of Eukalyptus for Mac, with Eukalyptus+. Between a Mac and a Windows PC, it will work with the Windows version, which is not out yet.
+Yes, since version 0.9.0 of Eukalyptus, on Mac and on Windows, with Eukalyptus+. Between a Mac and a Windows PC, it works the same way as between two Macs.
 
 </details>
 

@@ -1,9 +1,9 @@
 ---
 title: "Synchroniser ses sessions SSH entre Mac et Windows, chiffrées de bout en bout"
-description: "La synchronisation des sessions est disponible depuis la version 0.9.0 sur Mac, avec Eukalyptus+ : chiffrée de bout en bout sur vos appareils, par un relais temporaire du serveur d'Eukalyptus qui ne peut rien lire. Avec Windows, quand sa version sortira. Le principe et comment le vérifier."
+description: "La synchronisation des sessions est disponible depuis la version 0.9.0, sur Mac et sous Windows, avec Eukalyptus+ : chiffrée de bout en bout sur vos appareils, par un relais temporaire du serveur d'Eukalyptus qui ne peut rien lire. Le principe et comment le vérifier."
 category: Guide
 date: 2026-11-01
-updated: 2026-11-03
+updated: 2026-11-26
 reading_time: 7 min
 source: https://eukalyptus.app/blog/synchroniser-sessions-ssh
 ---
@@ -14,7 +14,7 @@ Quand on administre des serveurs depuis un Mac et un PC Windows, on finit par re
 
 > **En bref**
 >
-> - Elle est disponible depuis la version 0.9.0, entre vos Mac, et elle est réservée à Eukalyptus+, comme le coffre d'équipe. Avec Windows, elle fonctionnera quand la version Windows sortira.
+> - Elle est disponible depuis la version 0.9.0, entre vos Mac et vos PC Windows, et elle est réservée à Eukalyptus+, comme le coffre d'équipe.
 > - Pas de compte. Les fichiers passent par le serveur d'Eukalyptus, simple relais temporaire, et y sont effacés au plus tard 365 jours après leur dernière modification. Ni iCloud, ni Dropbox, ni OneDrive, ni SFTP.
 > - Tout est chiffré de bout en bout sur vos appareils, avec une clé que seuls vos appareils possèdent : le serveur ne peut pas lire les fichiers.
 > - Un administrateur ou un attaquant du serveur peut retenir ou effacer des fichiers, jamais les lire ni les modifier sans détection. Si vous perdez la clé et tous vos appareils, personne ne peut récupérer les données.
@@ -35,7 +35,7 @@ Quand on administre des serveurs depuis un Mac et un PC Windows, on finit par re
 
 ## Ce qu'apporte la version 0.9.0
 
-Une précision d'abord, pour ne laisser aucun doute : **la synchronisation des sessions est disponible depuis la version 0.9.0 pour Mac**, et elle est réservée à Eukalyptus+. Entre un Mac et un PC Windows, elle fonctionnera avec la version Windows, qui n'est pas encore sortie. Cet article décrit le principe retenu, pour que vous puissiez le juger avant d'y confier quoi que ce soit.
+Une précision d'abord, pour ne laisser aucun doute : **la synchronisation des sessions est disponible depuis la version 0.9.0, sur Mac comme sous Windows**, et elle est réservée à Eukalyptus+. Entre un Mac et un PC Windows, elle fonctionne comme entre deux Mac. Cet article décrit le principe retenu, pour que vous puissiez le juger avant d'y confier quoi que ce soit.
 
 ## Le problème : deux machines, un seul jeu de sessions
 
@@ -47,7 +47,7 @@ Eukalyptus prend un autre chemin : les fichiers sont chiffrés sur vos appareils
 
 Vos appareils échangent des fichiers à travers le serveur d'Eukalyptus. Pour chaque groupe d'appareils, il garde le dernier fichier chiffré de chaque appareil, et les autres appareils viennent le récupérer. La boîte et son droit d'accès sont calculés à partir de la clé de synchronisation, que seuls vos appareils possèdent : il n'y a pas de compte à créer.
 
-*Schéma : Synchronisation : un Mac chiffre ses sessions et les envoie au serveur d'Eukalyptus, simple relais temporaire où elles restent illisibles ; votre autre appareil (un autre Mac, puis un PC Windows avec la version Windows) les récupère et les déchiffre avec la même clé.*
+*Schéma : Synchronisation : un Mac chiffre ses sessions et les envoie au serveur d'Eukalyptus, simple relais temporaire où elles restent illisibles ; votre autre appareil (un autre Mac ou un PC Windows) les récupère et les déchiffre avec la même clé.*
 
 | Votre Mac |  | Serveur Eukalyptus |  | Votre autre appareil |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ Le coffre d'équipe passe lui aussi par le serveur d'Eukalyptus, avec les mêmes
 
 ## Sans synchronisation : exporter et importer
 
-Sans Eukalyptus+, ou pour passer à un PC Windows tant que sa version n'est pas sortie, vous pouvez passer d'une machine à l'autre à la main : exportez vos sessions dans un fichier **.eukalyptus**, puis importez-le sur l'autre appareil. Cet export ne contient aucun mot de passe. Vos clés SSH, elles, restent dans votre agent ou votre dossier **.ssh**, comme avec n'importe quel client : voir [le guide des clés SSH](./cles-ssh-mac.md).
+Sans Eukalyptus+, vous pouvez passer d'une machine à l'autre à la main : exportez vos sessions dans un fichier **.eukalyptus**, puis importez-le sur l'autre appareil. Cet export ne contient aucun mot de passe. Vos clés SSH, elles, restent dans votre agent ou votre dossier **.ssh**, comme avec n'importe quel client : voir [le guide des clés SSH](./cles-ssh-mac.md).
 
 ## Ce qui est décidé, ce qui reste ouvert
 
@@ -111,14 +111,14 @@ Ce qui est arrêté :
 - les mots de passe sont synchronisés par défaut, et vous choisissez ce qui l'est, catégorie par catégorie ;
 - un format publié, qui se vérifie.
 
-**Nos serveurs ne font que transmettre.** Ce qui y passe est chiffré de bout en bout sur vos appareils avant de partir : le serveur ne voit que des données illisibles, sans la clé pour les ouvrir. Rien n'y est gardé plus de 365 jours après sa dernière modification, et vos données, elles, restent sur vos appareils. Ce qui reste ouvert : la synchronisation avec Windows, qui attend la sortie de la version Windows. Ce principe est aussi résumé sur la page [Sécurité](https://eukalyptus.app/securite#synchronisation).
+**Nos serveurs ne font que transmettre.** Ce qui y passe est chiffré de bout en bout sur vos appareils avant de partir : le serveur ne voit que des données illisibles, sans la clé pour les ouvrir. Rien n'y est gardé plus de 365 jours après sa dernière modification, et vos données, elles, restent sur vos appareils. Ce principe est aussi résumé sur la page [Sécurité](https://eukalyptus.app/securite#synchronisation).
 
 ## Questions fréquentes
 
 <details>
 <summary>La synchronisation est-elle disponible ?</summary>
 
-Oui, depuis la version 0.9.0 d'Eukalyptus pour Mac, avec Eukalyptus+. Entre un Mac et un PC Windows, elle fonctionnera avec la version Windows, qui n'est pas encore sortie.
+Oui, depuis la version 0.9.0 d'Eukalyptus, sur Mac comme sous Windows, avec Eukalyptus+. Entre un Mac et un PC Windows, elle fonctionne comme entre deux Mac.
 
 </details>
 
