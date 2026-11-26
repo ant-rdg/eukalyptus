@@ -53,7 +53,7 @@ Mostly the same features on both systems, each written for its own system (Swift
 | Mosh | Yes | Not yet |
 | SFTP browser next to the terminal, drag and drop, built-in code editor | Yes | Yes |
 | FTP, FTPS, S3 and compatible services (AWS, MinIO, Cloudflare R2…) | Yes | Yes |
-| Several simultaneous transfers, with progress, speed and time left | Upcoming version | Yes (0.9.5) |
+| Several simultaneous transfers, with progress, speed and time left | Yes (0.9.5) | Yes (0.9.5) |
 | Built-in RDP remote desktop in a tab, SSH gateway | Yes | Yes |
 | Built-in VNC in a tab | Yes | Yes |
 | Built-in browser | Yes | Yes |
