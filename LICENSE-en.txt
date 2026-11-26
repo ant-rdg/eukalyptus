@@ -1,0 +1,36 @@
+EUKALYPTUS END USER LICENSE
+Version of November 3, 2026 (beta)
+
+Copyright © 2026 Antoine Rodrigues. All rights reserved.
+
+This is a translation of the French license. In case of difference, the French version prevails.
+
+1. Free use
+Anyone may download, install and use Eukalyptus free of charge, on as many computers as they wish, for personal, professional, non-profit or educational use. No account, registration or payment is required.
+
+2. Eukalyptus+ (optional support)
+Eukalyptus+ is an optional license, paid once and valid for life, that helps the author keep developing the software. It takes nothing away from the free use described in section 1: it only gives a few extra benefits (for example new versions a few days early, the choice of session icons, sync between your computers and the team vault). The key is personal: it may be used on its holder's computers, but must not be distributed. The purchase and refund terms are those of the payment page.
+
+3. Sharing
+You may give a copy of the original, unmodified installer to anyone you like, free of charge, provided this license is kept with it. Selling Eukalyptus, or including it in a paid product or service, requires the author's written consent.
+
+4. Source code
+Eukalyptus is neither free software nor open source: its source code is not provided. You may not modify it, distribute a modified version or decompile it, except where the law allows it despite this prohibition (for example for interoperability).
+
+5. Privacy
+Eukalyptus collects no personal data, sends no usage statistics and contains no advertising. The only connections to the author's website are an install counter (sent only once, at the very first launch: the version number, nothing else), the check for updates and, if you have Eukalyptus+, the activation and periodic re-check of the license, as well as sync between your computers and the team vault if you turn them on: their files are encrypted on your devices before they are sent, the server cannot read them and erases them at most 365 days after their last change. These connections send no usage statistics. The details are in "Security and Privacy".
+
+6. Third-party components
+Eukalyptus includes open-source software, listed in "Credits and Third-Party Licenses". Each remains subject to its own license, which applies to that component and prevails over this license as far as that component is concerned.
+
+7. Names and trademarks
+The Eukalyptus name and logo belong to the author. Other names, trademarks and logos mentioned belong to their owners.
+
+8. No warranty
+Eukalyptus is provided "as is", without warranty of any kind, and this version is a beta. To the extent permitted by law, the author is not liable for data loss, service interruptions or other damage related to its use. You remain responsible for the servers you connect to and for your right to access them.
+
+9. Termination
+The right of use ends if you do not comply with this license. Sections 4, 6, 7 and 8 then continue to apply.
+
+10. Governing law
+This license is governed by French law.

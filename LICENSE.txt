@@ -1,0 +1,34 @@
+LICENCE D'UTILISATION D'EUKALYPTUS
+Version du 3 novembre 2026 (bêta)
+
+Copyright © 2026 Antoine Rodrigues. Tous droits réservés.
+
+1. Utilisation libre et gratuite
+Toute personne peut télécharger, installer et utiliser Eukalyptus gratuitement, sur autant d'ordinateurs qu'elle le souhaite, pour un usage personnel, professionnel, associatif ou scolaire. Aucun compte, aucune inscription et aucun paiement ne sont demandés.
+
+2. Eukalyptus+ (soutien facultatif)
+Eukalyptus+ est une licence facultative, à paiement unique et valable à vie, qui aide l'auteur à poursuivre le développement. Elle ne retire rien à l'utilisation libre et gratuite décrite au point 1 : elle donne seulement quelques avantages annexes (par exemple les nouvelles versions quelques jours en avance, le choix des icônes de session, la synchronisation entre vos ordinateurs et le coffre d'équipe). La clé est personnelle : elle peut servir sur les ordinateurs de son titulaire, mais ne doit pas être diffusée. Les conditions d'achat et de remboursement sont celles de la page de paiement.
+
+3. Partage
+Vous pouvez donner une copie de l'installateur d'origine, non modifié, à qui vous voulez, gratuitement, à condition de conserver la présente licence. La vente d'Eukalyptus, ou son inclusion dans un produit ou un service payant, demande l'accord écrit de l'auteur.
+
+4. Code source
+Eukalyptus n'est pas un logiciel libre ni open source : son code source n'est pas fourni. Il est interdit de le modifier, d'en diffuser une version modifiée ou de le décompiler, sauf dans les cas où la loi l'autorise malgré cette interdiction (par exemple pour l'interopérabilité).
+
+5. Vie privée
+Eukalyptus ne collecte aucune donnée personnelle, n'envoie aucune statistique d'usage et ne contient aucune publicité. Les seules connexions vers le site de l'auteur sont un compteur d'installations (envoyé une seule fois, au tout premier lancement : le numéro de version, rien d'autre), la recherche de mises à jour et, si vous avez Eukalyptus+, l'activation et la revérification périodique de la licence, ainsi que la synchronisation entre vos ordinateurs et le coffre d'équipe si vous les activez : leurs fichiers sont chiffrés sur vos appareils avant l'envoi, le serveur ne peut pas les lire et les efface au plus tard 365 jours après leur dernière modification. Ces connexions n'envoient aucune statistique d'usage. Le détail est dans « Sécurité et confidentialité ».
+
+6. Composants tiers
+Eukalyptus embarque des logiciels libres, listés dans « Crédits et licences tierces ». Chacun reste soumis à sa propre licence, qui s'applique à ce composant et prévaut sur la présente licence pour ce qui le concerne.
+
+7. Noms et marques
+Le nom Eukalyptus et son logo appartiennent à l'auteur. Les autres noms, marques et logos cités appartiennent à leurs propriétaires.
+
+8. Absence de garantie
+Eukalyptus est fourni « en l'état », sans garantie d'aucune sorte, et cette version est une bêta. Dans les limites permises par la loi, l'auteur n'est pas responsable des pertes de données, interruptions de service ou autres dommages liés à son utilisation. Vous restez responsable des serveurs auxquels vous vous connectez et de votre droit d'y accéder.
+
+9. Fin de la licence
+Le droit d'utilisation prend fin si vous ne respectez pas cette licence. Les points 4, 6, 7 et 8 continuent alors de s'appliquer.
+
+10. Droit applicable
+La présente licence est soumise au droit français.

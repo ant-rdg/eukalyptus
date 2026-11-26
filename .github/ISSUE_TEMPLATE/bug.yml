@@ -1,0 +1,104 @@
+name: Bug
+description: Signaler un problème précis dans Eukalyptus (macOS ou Windows)
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de signaler ce problème. Les questions et les idées vont dans les [Discussions](https://github.com/ant-rdg/eukalyptus/discussions) ; une **faille de sécurité** se signale en privé (voir [SECURITY.md](https://github.com/ant-rdg/eukalyptus/blob/main/SECURITY.md)), jamais ici.
+
+        *You can write in English.*
+
+        **Une issue est publique : masquez les mots de passe, clés, jetons, adresses IP et noms de serveurs privés.**
+  - type: checkboxes
+    id: recherche
+    attributes:
+      label: Vérifications
+      options:
+        - label: J'ai cherché une issue existante (ouverte ou fermée) qui décrit le même problème.
+          required: true
+        - label: J'utilise la dernière version d'Eukalyptus, ou je précise ci-dessous pourquoi je ne peux pas la mettre à jour.
+          required: false
+  - type: dropdown
+    id: plateforme
+    attributes:
+      label: Plateforme
+      options:
+        - macOS
+        - Windows
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version d'Eukalyptus
+      description: "Réglages › Crédits › À propos (sur Mac, aussi le menu Eukalyptus › À propos d'Eukalyptus)."
+      placeholder: "0.9.5"
+    validations:
+      required: true
+  - type: input
+    id: systeme
+    attributes:
+      label: Système
+      description: "Version de macOS ou de Windows, et type de processeur."
+      placeholder: "macOS 15.1, Apple M2  /  Windows 11 23H2, x64"
+    validations:
+      required: true
+  - type: dropdown
+    id: domaine
+    attributes:
+      label: Zone concernée
+      description: Facultatif, aide à classer le problème.
+      multiple: true
+      options:
+        - Terminal / SSH
+        - SFTP / fichiers
+        - FTP / FTPS
+        - S3
+        - RDP
+        - VNC
+        - Tunnels
+        - Macros
+        - Monitoring
+        - Outils réseau
+        - Sessions, import, export
+        - Synchronisation / coffre d'équipe (Eukalyptus+)
+        - Installation / mise à jour
+        - Autre
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes pour reproduire
+      description: Une étape par ligne, dans l'ordre. Précisez le type de serveur concerné (Linux, Windows, NAS, version d'OpenSSH…).
+      placeholder: |
+        1. Ouvrir une session SSH vers un serveur Debian 12
+        2. Faire glisser un fichier dans le navigateur SFTP
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Ce que vous attendiez
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Ce qui s'est passé
+      description: Le message d'erreur exact, et une capture d'écran si elle aide (glissez-la dans ce champ).
+    validations:
+      required: true
+  - type: textarea
+    id: journal
+    attributes:
+      label: Message ou journal (facultatif)
+      description: Texte copié depuis l'application ou le terminal. **Retirez** mots de passe, clés, jetons, adresses IP et noms de serveurs privés avant de coller.
+      render: text
+  - type: textarea
+    id: autre
+    attributes:
+      label: Autre information (facultatif)
+      description: Le problème est-il constant ? Est-il apparu après une mise à jour ? Une solution de contournement ?

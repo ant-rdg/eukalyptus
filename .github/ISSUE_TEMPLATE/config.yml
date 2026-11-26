@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Proposer une idée (Idées, avec votes) / Suggest an idea
+    url: https://github.com/ant-rdg/eukalyptus/discussions/new?category=idees
+    about: Les idées se discutent dans les Discussions, où chacun peut voter avec un pouce levé. Décrivez le besoin avant la solution.
+  - name: Poser une question / Ask a question
+    url: https://github.com/ant-rdg/eukalyptus/discussions/new?category=questions
+    about: Une question d'utilisation, de configuration ou de compatibilité ? Les Discussions sont faites pour ça.
+  - name: Signaler une faille de sécurité / Report a vulnerability
+    url: https://github.com/ant-rdg/eukalyptus/security/advisories/new
+    about: Signalement privé uniquement. Ne publiez jamais une faille dans une issue (voir SECURITY.md).

@@ -1,0 +1,43 @@
+title: "[Idée] "
+labels: ["idée"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de partager une idée. **Cherchez d'abord** une idée proche dans cette catégorie : votez avec un pouce levé plutôt que d'en ouvrir une seconde. Les votes aident à choisir la suite. Consultez aussi la [feuille de route](https://github.com/ant-rdg/eukalyptus/blob/main/ROADMAP.md).
+
+        *You can write in English.*
+
+        Proposer une idée n'oblige pas à la réaliser, et aucune date n'est promise.
+  - type: checkboxes
+    id: recherche
+    attributes:
+      label: Vérification
+      options:
+        - label: J'ai cherché une idée existante avant d'en proposer une.
+          required: true
+  - type: dropdown
+    id: plateforme
+    attributes:
+      label: Plateforme concernée
+      options:
+        - macOS et Windows
+        - macOS
+        - Windows
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin
+      description: Qu'essayez-vous de faire ? Qu'est-ce qui vous gêne aujourd'hui ? Avec quel type de serveur ou de flux de travail ? Décrivez le besoin avant la solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Votre idée
+      description: "Comment imaginez-vous que cela fonctionne ? (Facultatif : le besoin compte davantage.)"
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Comment vous faites aujourd'hui
+      description: "Une solution de contournement, un autre outil (facultatif)."

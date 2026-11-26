@@ -1,0 +1,50 @@
+# Étiquettes du dépôt. Format volontairement simple (une entrée = trois lignes), lu par scripts/labels.sh.
+# Pas de guillemet ni de deux-points dans les descriptions.
+- name: bug
+  color: d73a4a
+  description: Un problème précis dans l'application
+- name: idée
+  color: a2eeef
+  description: Une idée de fonction ou d'amélioration
+- name: question
+  color: d876e3
+  description: Une question d'utilisation
+- name: documentation
+  color: 0075ca
+  description: Guides et textes du dépôt
+- name: traduction
+  color: 5319e7
+  description: Fichiers de langue de l'application
+- name: mac
+  color: 1d76db
+  description: Concerne la version macOS
+- name: windows
+  color: 0e8a16
+  description: Concerne la version Windows
+- name: sécurité
+  color: b60205
+  description: Lié à la sécurité (jamais de faille en public)
+- name: bonne première contribution
+  color: 7057ff
+  description: Un bon point de départ pour contribuer
+- name: aide bienvenue
+  color: 008672
+  description: Votre aide est la bienvenue sur ce sujet
+- name: en attente d'informations
+  color: fbca04
+  description: Il manque des informations pour avancer
+- name: confirmé
+  color: 0e8a16
+  description: Problème reproduit par l'auteur
+- name: en cours
+  color: fef2c0
+  description: L'auteur travaille dessus
+- name: corrigé dans la prochaine version
+  color: c2e0c6
+  description: Corrigé, sera publié avec la prochaine version
+- name: doublon
+  color: cfd3d7
+  description: Déjà signalé ailleurs
+- name: ne sera pas fait
+  color: ffffff
+  description: Hors du cadre du projet
